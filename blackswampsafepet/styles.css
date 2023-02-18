@@ -1,0 +1,226 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: "Roboto";                                   
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+.header-grid {
+  display:grid;
+  grid-template-columns: 715px 1200px;
+  grid-template-rows: 45px;
+  background-color:#443C3A;
+  padding: 5px;
+  position:fixed;
+}
+
+.phone-icon {
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.envelope-icon {
+  margin-left: 8px;
+  margin-bottom: 1px;
+}
+
+.schedule-estimate-and-make-payment {
+  display:grid;
+  grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px;
+}
+
+.schedule-estimate-and-make-payment button {
+  background-color: #25272d;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.phone-number-and-email {
+  display:grid;
+  grid-template-columns: 25px 150px 35px 110px;
+  grid-template-rows: 100px;
+  margin-top: 10px;
+  color: white;
+}
+
+.phone-number {
+  margin-top: 1px;
+}
+
+.email {
+  color: white;
+}
+
+.email-icon {
+  height: 24px;
+  width: 24px;
+  margin-top: 2px;
+}
+
+.phone-icon {
+  margin-top: 0.5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1920px;
+  grid-template-rows: 150px 500px;
+  padding-top: 55px;
+}
+
+.logo-and-design {
+  display: grid;
+  background-color: black;
+}
+
+.logo-and-design button {
+  background-color: black;
+  grid-template-columns: 640px 640px 640px;
+  border: none;
+}
+
+.green-side {
+  background-color: #646347;
+}
+
+.black-swamp-logo-side-text {
+  margin-top: 11px;
+}
+
+.description-of-black-swamp-safe-pet {
+  display: grid;
+  grid-template-columns: 640px 640px 640px;
+  grid-template-rows: 500px;
+  background-color: #443C3A;
+  color: white;
+}
+
+.image-of-sam {
+  margin-left: 93px;
+  object-fit:fit;
+  width:400px;
+  height:500px;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 12px;
+  text-align: center;
+  border-right-width: 3px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 3px;
+  border-style: solid;
+  border-color: #646347;
+}
+
+.mid-section-right-side {
+  display: grid;
+  grid-template-columns: 320px 320px;
+  grid-template-rows: 250px 250px 250px 250px; 
+  background-color: #443C3A;
+}
+
+.mid-section-right-side-top-left {
+  border-radius: 2px;
+  background-color: #443C3A;
+}
+
+.mid-section-right-side-top-right {
+  border-radius: 2px;
+  background-color: #443C3A;
+}
+
+.mid-section-right-side-bottom-left {
+  border-radius: 2px;
+  background-color: #443C3A;
+}
+
+.mid-section-right-side-bottom-right{
+  border-radius: 2px;
+  background-color: #443C3A;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1920px;
+  grid-template-rows: 26.3px 270px;
+}
+
+.testimonial-border {
+  background-color: #646347;
+}
+
+.customer-testimonials {
+  display: grid;
+  grid-template-columns: 640px 640px 640px;
+  background-color: #A59D90;
+  color: white;
+  text-align: center;
+}
+
+.customer-testimonials-left-section {
+  margin-top: 120px;
+}
+
+.customer-testimonials-right-section {
+  margin-top: 120px;
+}
+
+.mid-section-right-side-top-left img{
+  margin-left: 1px;
+  width: 320px;
+  height: 250px;
+}
+
+.mid-section-right-side-bottom-right img {
+  object-fit:cover;
+  margin-left: 1px;
+  width: 320px;
+  height: 250px;
+}
+
+.bottom-body {
+  display: grid;
+  grid-template-columns: 960px 960px;
+  grid-template-rows: 200px;
+  background-color: #25272d;
+  color: white;
+}
+
+.bottom-body-left-section {
+  text-align: center;
+}
+
+.bottom-body-right-section {
+  text-align: center;
+}
+
+.footer-div {
+  display: grid;
+  grid-template-columns: 1920px;
+  grid-template-rows: 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
