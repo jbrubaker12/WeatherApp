@@ -11,7 +11,7 @@ function init(event) {
   .then(data => {
     console.log(data);
     // Parse the data to extract the weather information you need
-    document.getElementById('temperature').innerHTML=`<h4>temperature: ${data["main"].temp}°F</h4>`;
+    document.getElementById('temperature').innerHTML=`<h4>Temperature: ${data["main"].temp}°F</h4>`;
     document.getElementById('wind-speed').innerHTML=`<h4>Wind Speed: ${data['wind'].speed} mph</h4>`;
     document.getElementById('sky').innerHTML=`<h4>The sky's are ${data['weather'][0].main} today!</h4>`;
   })
