@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    background: radial-gradient(circle, #694c5e, #be7091, #aaa6a6);
+    color: rgb(248, 248, 248);
+}
+
+.board {
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 300px 300px 300px;
+    margin-left: 26%;
+}
+
+.board div {
+    text-align:center;
+}
+
+button {
+    border-width: 1px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.top-left-button {
+    border-left-width: 0px;
+    border-top-width: 0px;
+}
+
+.top-mid-button {
+    border-top-width: 0px;
+}
+
+.top-right-button {
+    border-top-width: 0px;
+    border-right-width: 0px;
+}
+
+.mid-left-button {
+    border-left-width: 0px;
+}
+
+.mid-right-button {
+    border-right-width: 0px;
+}
+
+.bottom-left-button {
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.bottom-mid-button {
+    border-bottom-width: 0px;
+}
+
+.bottom-right-button {
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+}
+
+body {
+    background: linear-gradient(to bottom, #694c5e, #be7091);
+}
+
+.board h1 {
+    font-size: 100px;
+    color:rgb(32, 61, 87);
+}
+
+.x-or-y-container {
+    margin-top: 0.3%;
+    margin-left: 43%;
+}
+
+.x-or-y-container button {
+    width: 40px;
+}
