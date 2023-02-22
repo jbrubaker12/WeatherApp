@@ -21,12 +21,22 @@ function checkForWin(board) {
     var boardColTwo = [boardRowOne[1],boardRowTwo[1],boardRowThree[1]];
     var boardColThree = [boardRowOne[2],boardRowTwo[2],boardRowThree[2]]
     if (boardRowOne[0] == 'X' && boardRowOne[1] == 'X' && boardRowOne[2] == 'X') {
-        console.log("X wins")
+	return "X wins"
     } else if (boardRowTwo[0] == 'X' && boardRowTwo[1] == 'X' && boardRowTwo[2] == 'X') {
-        console.log("X wins")
+	return "X wins"
     } else if (boardRowThree[0] == 'X' && boardRowThree[1] == 'X' && boardRowThree[2] == 'X') {
-        console.log("X wins")
+	return "X wins"
     }
+
+    if (boardRowOne[0] == 'O' && boardRowOne[1] == 'O' && boardRowOne[2] == 'O') {
+	return "O wins"
+    } else if (boardRowTwo[0] == 'O' && boardRowTwo[1] == 'O' && boardRowTwo[2] == 'O') {
+	return "O wins"
+    } else if (boardRowThree[0] == 'O' && boardRowThree[1] == 'O' && boardRowThree[2] == 'O') {
+	return "O wins"
+    }
+
+
 };
 
 function main() {
