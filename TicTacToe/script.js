@@ -32,7 +32,6 @@ function checkForWin(board) {
 function main() {
     document.getElementById("x-or-y-container").innerHTML="";  
     var board = getBoardValues();
-    console.log("hello world")
     checkForWin(board);
 };
 
