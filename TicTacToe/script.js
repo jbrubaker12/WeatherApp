@@ -1,7 +1,4 @@
-var xFirst = false
-var yFirst = false
-var player1 = null
-var player2 = null
+currentPlayer= null;
 
 function getBoardValues() {
     var board = {
@@ -41,26 +38,20 @@ function checkForWin(board) {
 function main() {  
     var board = getBoardValues();
     if (checkForWin(board) == "X wins") {
-        console.log("X") //Need code here to end the game if X wins
+        console.log("X wins") //Need code here to end the game if X wins
     } else if (checkForWin(board) == "O wins") {
-        console.log("O") //Need code here to end the game if O wins
-    }
+        console.log("O wins") //Need code here to end the game if O wins
+    };
 };
 
 function xClicked() {
     document.getElementById("x-or-y-container").innerHTML="";
-    player1 = "X";
-    player2 = "Y";
-    main()
+    currentPlayer = "X";
+    main();
 };
 
 function yClicked() {
     document.getElementById("x-or-y-container").innerHTML="";
-    player1 = "Y";
-    player2 = "X";
-    main()
+    currentPlayer = "Y";
+    main();
 };
-
-function handleUserClick() {
-
-}

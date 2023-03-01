@@ -12,9 +12,9 @@ header {
 
 .board {
     display: grid;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-columns: 300px 300px 300px;
-    margin-left: 26%;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
 }
 
 .board div {
@@ -76,7 +76,7 @@ body {
 
 .x-or-y-container {
     margin-top: 0.3%;
-    margin-left: 43%;
+    text-align: center;
 }
 
 .x-or-y-container button {
