@@ -28,11 +28,19 @@ function checkForWin(board) {
         return "X wins"
     } else if (board[1][2] == 'X' && board[2][2] == 'X' && board[3][2] == 'X') {
         return "X wins"
+    } else if (board[1][0] == 'X' && board[2][1] == 'X' && board [3][2] == 'X') {
+    	return "X wins"
+    } else if (board[1][2] == 'X' && board[2][1] == 'X' && board [3][0] == 'X') {
+    	return "X wins"
     } else if (board[1][0] == 'O' && board[2][0] == 'O' && board[3][0] == 'O') {
         return "O wins"
     } else if (board[1][1] == 'O' && board[2][1] == 'O' && board[3][1] == 'O') {
         return "O wins"
-    } else if (board[1][2] == 'O' && board[2][2] == 'O' && board[3][2] == 'O') {
+    } else if (board[1][1] == 'O' && board[2][1] == 'O' && board[3][1] == 'O') {
+        return "O wins"
+    } else if (board[1][0] == 'O' && board[2][1] == 'O' && board[3][2] == 'O') {
+        return "O wins"
+    } else if (board[1][2] == 'O' && board[2][1] == 'O' && board[3][0] == 'O') {
         return "O wins"
     } else if  (boardRowOne[0] == 'O' && boardRowOne[1] == 'O' && boardRowOne[2] == 'O') {
 	    return "O wins"
