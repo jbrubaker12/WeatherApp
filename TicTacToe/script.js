@@ -48,6 +48,8 @@ function checkForWin(board) {
 	    return "O wins"
     } else if (boardRowThree[0] == 'O' && boardRowThree[1] == 'O' && boardRowThree[2] == 'O') {
 	    return "O wins"
+    } else if (board[1][0] != "" && board[1][1] != "" && board[1][2] != "" && board[2][0] != "" && board[2][1] != "" && board[2][2] != "" && board[3][0] != "" && board[3][1] != "" && board[3][2] != "") {
+    	return "Tie"
     } else {
         return "No one wins"
     }
@@ -62,6 +64,8 @@ function main() {
     } else if (checkForWin(board) == "O wins") {
         console.log("O wins");
         alert("O wins, refresh your browser to play again.");
+    } else if (checkForWin(board) == "Tie") {
+    	alert("Cat's Game")
     };
 };
 
