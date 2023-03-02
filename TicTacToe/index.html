@@ -9,20 +9,20 @@
     </Header>
     <body>
         <div class="board">
-            <button class="top-left-button"><div class="top-left" id="top-left"><h1 id="top-left-value"></h1></div></button>
-            <button class="top-mid-button"><div class="top-mid" id="top-mid"><h1 id="top-mid-value"></h1></div></button>
-            <button class="top-right-button"><div class="top-right" id="top-right"><h1 id="top-right-value"></h1></div></button>
-            <button class="mid-left-button"><div class="mid-left" id="mid-left"><h1 id="mid-left-value"></h1></div></button>
-            <button class="mid-button"><div class="mid" id="mid"><h1 id="mid-value"></h1></div></button>
-            <button class="mid-right-button"><div class="mid-right" id="mid-right"><h1 id="mid-right-value"></h1></div></button>
-            <button class="bottom-left-button"><div class="bottom-left" id="bottom-left"><h1 id="bottom-left-value"></h1></div></button>
-            <button class="bottom-mid-button"><div class="bottom-mid" id="bottom-mid"><h1 id="bottom-mid-value"></h1></div></button>
-            <button class="bottom-right-button"><div class="bottom-right" id="bottom-right"><h1 id="bottom-right-value"></h1></div></button>
+            <button onclick=topLeftClicked() class="top-left-button"><div class="top-left" id="top-left"><h1 id="top-left-value"></h1></div></button>
+            <button onclick=topMidClicked() class="top-mid-button"><div class="top-mid" id="top-mid"><h1 id="top-mid-value"></h1></div></button>
+            <button onclick=topRightClicked() class="top-right-button"><div class="top-right" id="top-right"><h1 id="top-right-value"></h1></div></button>
+            <button onclick=midLeftClicked() class="mid-left-button"><div class="mid-left" id="mid-left"><h1 id="mid-left-value"></h1></div></button>
+            <button onclick=midClicked() class="mid-button"><div class="mid" id="mid"><h1 id="mid-value"></h1></div></button>
+            <button onclick=midRightClicked() class="mid-right-button"><div class="mid-right" id="mid-right"><h1 id="mid-right-value"></h1></div></button>
+            <button onclick=bottomLeftClicked() class="bottom-left-button"><div class="bottom-left" id="bottom-left"><h1 id="bottom-left-value"></h1></div></button>
+            <button onclick=bottomMidClicked() class="bottom-mid-button"><div class="bottom-mid" id="bottom-mid"><h1 id="bottom-mid-value"></h1></div></button>
+            <button onclick=bottomRightClicked() class="bottom-right-button"><div class="bottom-right" id="bottom-right"><h1 id="bottom-right-value"></h1></div></button>
         </div>
         <div class="x-or-y-container" id="x-or-y-container">
-            <label>Choose Either X or O:</label>
-            <button id="x-button" onclick="xClicked()"><h3>X</h3></button>
-            <button id="y-button" onclick="yClicked()"><h3>O</h3></button>
+            <label>Choose Either X or O to Start Game:</label>
+            <button id="x-button" onclick=xClicked()><h3>X</h3></button>
+            <button id="y-button" onclick=yClicked()><h3>O</h3></button>
         </div>
         <script src="script.js"></script>
     </body>
