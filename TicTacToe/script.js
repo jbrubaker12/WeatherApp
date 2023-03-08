@@ -28,11 +28,19 @@ function checkForWin(board) {
         return "X wins"
     } else if (board[1][2] == 'X' && board[2][2] == 'X' && board[3][2] == 'X') {
         return "X wins"
+    } else if (board[1][0] == 'X' && board[2][1] == 'X' && board [3][2] == 'X') {
+    	return "X wins"
+    } else if (board[1][2] == 'X' && board[2][1] == 'X' && board [3][0] == 'X') {
+    	return "X wins"
     } else if (board[1][0] == 'O' && board[2][0] == 'O' && board[3][0] == 'O') {
         return "O wins"
     } else if (board[1][1] == 'O' && board[2][1] == 'O' && board[3][1] == 'O') {
         return "O wins"
-    } else if (board[1][2] == 'O' && board[2][2] == 'O' && board[3][2] == 'O') {
+    } else if (board[1][1] == 'O' && board[2][1] == 'O' && board[3][1] == 'O') {
+        return "O wins"
+    } else if (board[1][0] == 'O' && board[2][1] == 'O' && board[3][2] == 'O') {
+        return "O wins"
+    } else if (board[1][2] == 'O' && board[2][1] == 'O' && board[3][0] == 'O') {
         return "O wins"
     } else if  (boardRowOne[0] == 'O' && boardRowOne[1] == 'O' && boardRowOne[2] == 'O') {
 	    return "O wins"
@@ -40,6 +48,8 @@ function checkForWin(board) {
 	    return "O wins"
     } else if (boardRowThree[0] == 'O' && boardRowThree[1] == 'O' && boardRowThree[2] == 'O') {
 	    return "O wins"
+    } else if (board[1][0] != "" && board[1][1] != "" && board[1][2] != "" && board[2][0] != "" && board[2][1] != "" && board[2][2] != "" && board[3][0] != "" && board[3][1] != "" && board[3][2] != "") {
+    	return "Tie"
     } else {
         return "No one wins"
     }
@@ -54,6 +64,8 @@ function main() {
     } else if (checkForWin(board) == "O wins") {
         console.log("O wins");
         alert("O wins, refresh your browser to play again.");
+    } else if (checkForWin(board) == "Tie") {
+    	alert("Cat's Game")
     };
 };
 
