@@ -13,7 +13,7 @@ function init(event) {
     // Parse the data to extract the weather information you need
     document.getElementById('temperature').innerHTML=`<h4>Temperature: ${data["main"].temp}°F</h4>`;
     document.getElementById('wind-speed').innerHTML=`<h4>Wind Speed: ${data['wind'].speed} mph</h4>`;
-    document.getElementById('sky').innerHTML=`<h4>Sky's: ${data['weather'][0].main}</h4>`;
+    document.getElementById('sky').innerHTML=`<h4>Sky is: ${data['weather'][0].main}</h4>`;
   })
   .catch(error => {
     console.error('Error:', error);
